@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="草莓冰淇淋大全 - 提供草莓冰淇淋的制作方法、食谱大全、热量营养分析及选购指南。了解如何在家制作香甜可口的草莓冰淇淋，掌握不同口味草莓冰淇淋的制作技巧。">
+    <meta name="keywords" content="草莓冰淇淋,草莓冰淇淋制作,冰淇淋食谱,自制冰淇淋,夏季甜品">
+    <title>草莓冰淇淋-美味制作方法与食谱大全</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #e91e63;
+            --primary-dark: #c2185b;
+            --accent-color: #ff8a80;
+            --bg-color: #fff8f8;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --white: #ffffff;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 12px rgba(233, 30, 99, 0.1);
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 60px 0;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .cta-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fff0f5 0%, #ffebee 100%);
+            padding: 80px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary-dark);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .tag {
+            background-color: rgba(233, 30, 99, 0.1);
+            color: var(--primary-color);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Feature Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: -50px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .feature-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .feature-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        /* Recipes Section */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .recipe-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow 0.3s;
+        }
+
+        .recipe-card:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .recipe-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #f0f0f0;
+        }
+
+        .recipe-content {
+            padding: 25px;
+        }
+
+        .recipe-badge {
+            background-color: #ffebee;
+            color: var(--primary-color);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .recipe-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .recipe-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .recipe-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Nutrition & Tips */
+        .tips-section {
+            background-color: var(--white);
+        }
+
+        .tips-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .tips-content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .tips-list {
+            margin-top: 30px;
+        }
+
+        .tip-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .tip-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #fce4ec;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+
+        .tip-text h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .tip-text p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .tips-image img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: #f5f5f5;
+        }
+
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-question {
+            padding: 20px 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--text-main);
+            transition: background-color 0.2s;
+        }
+
+        .faq-question:hover {
+            background-color: #fafafa;
+        }
+
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 25px 20px;
+            max-height: 200px;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-color);
+        }
+
+        .faq-icon {
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h3 {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .tips-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                🍓 草莓<span>冰淇淋</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#recipes">经典食谱</a></li>
+                    <li><a href="#tips">制作技巧</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#" class="cta-btn">获取完整食谱</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-tags">
+                    <span class="tag">#夏季必吃</span>
+                    <span class="tag">#自制甜品</span>
+                    <span class="tag">#零添加</span>
+                </div>
+                <h1>一口咬下，满满都是夏天的味道</h1>
+                <p>无需专业设备，在家也能轻松制作香甜绵密、果香浓郁的草莓冰淇淋。告别人工香精，享受天然草莓的纯粹风味。</p>
+                <a href="#recipes" class="cta-btn" style="padding: 15px 40px; font-size: 1.1rem;">开始制作</a>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="container">
+            <div class="features">
+                <article class="feature-card">
+                    <span class="feature-icon">🥣</span>
+                    <h3 class="feature-title">零添加更健康</h3>
+                    <p class="feature-desc">使用新鲜草莓和优质牛奶，不含防腐剂和色素，适合全家人享用。</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon">🏠</span>
+                    <h3 class="feature-title">操作简单易学</h3>
+                    <p class="feature-desc">只需搅拌和冷冻两个步骤，无需复杂的冰淇淋机，厨房小白也能成功。</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon">❄️</span>
+                    <h3 class="feature-title">口感绵密细腻</h3>
+                    <p class="feature-desc">掌握黄金比例和冷冻技巧，打造如丝绸般顺滑的冰淇淋口感。</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Recipes Section -->
+        <section id="recipes" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>精选草莓冰淇淋食谱</h2>
+                    <p>从经典原味到创意混搭，总有一款能满足你的味蕾。</p>
+                </div>
+                <div class="recipe-grid">
+                    <!-- Recipe 1 -->
+                    <article class="recipe-card">
+                        <img src="https://picsum.photos/seed/strawberry1/400/300" alt="经典原味草莓冰淇淋" class="recipe-img">
+                        <div class="recipe-content">
+                            <span class="recipe-badge">经典必做</span>
+                            <h3 class="recipe-title">经典原味草莓冰淇淋</h3>
+                            <div class="recipe-meta">
+                                <span>⏱ 20分钟</span>
+                                <span>🔥 简单</span>
+                            </div>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">选用当季新鲜草莓，搭配淡奶油和牛奶，保留最纯粹的果香。</p>
+                            <a href="#" class="recipe-link">查看食谱 →</a>
+                        </div>
+                    </article>
+
+                    <!-- Recipe 2 -->
+                    <article class="recipe-card">
+                        <img src="https://picsum.photos/seed/strawberry2/400/300" alt="草莓酸奶冰淇淋" class="recipe-img">
+                        <div class="recipe-content">
+                            <span class="recipe-badge">低脂健康</span>
+                            <h3 class="recipe-title">草莓酸奶冰淇淋</h3>
+                            <div class="recipe-meta">
+                                <span>⏱ 15分钟</span>
+                                <span>🔥 中等</span>
+                            </div>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">用希腊酸奶替代部分奶油，口感更轻盈，热量更低，适合减脂期。</p>
+                            <a href="#" class="recipe-link">查看食谱 →</a>
+                        </div>
+                    </article>
+
+                    <!-- Recipe 3 -->
+                    <article class="recipe-card">
+                        <img src="https://picsum.photos/seed/strawberry3/400/300" alt="巧克力草莓冰淇淋" class="recipe-img">
+                        <div class="recipe-content">
+                            <span class="recipe-badge">浓郁口感</span>
+                            <h3 class="recipe-title">巧克力草莓冰淇淋</h3>
+                            <div class="recipe-meta">
+                                <span>⏱ 30分钟</span>
+                                <span>🔥 简单</span>
+                            </div>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">将融化的黑巧克力与草莓浆混合，每一口都是丝滑与果酸的碰撞。</p>
+                            <a href="#" class="recipe-link">查看食谱 →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section id="tips" class="section-padding tips-section">
+            <div class="container tips-wrapper">
+                <div class="tips-image">
+                    <img src="https://picsum.photos/seed/icecream/600/400" alt="制作冰淇淋的步骤">
+                </div>
+                <div class="tips-content">
+                    <h2>提升口感的4个关键技巧</h2>
+                    <p style="color: #666; margin-bottom: 20px;">制作出店里的品质并不难，关键在于细节的处理。以下经验能帮助你避开常见误区。</p>
+                    
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <div class="tip-icon">1</div>
+                            <div class="tip-text">
+                                <h4>控制冷冻时间</h4>
+                                <p>虽然冷藏可以吃，但冷冻4小时以上口感最佳。反复冷冻解冻会破坏冰晶结构，导致口感变差。</p>
+                            </div>
+                        </div>
+                        <div class="tip-item">
+                            <div class="tip-icon">2</div>
+                            <div class="tip-text">
+                                <h4>糖的比例</h4>
+                                <p>糖不仅是甜味剂，还能抑制冰晶生长。建议淡奶油与牛奶的混合液中，糖的比例控制在10%-15%。</p>
+                            </div>
+                        </div>
+                        <div class="tip-item">
+                            <div class="tip-icon">3</div>
+                            <div class="tip-text">
+                                <h4>打发奶油的时机</h4>
+                                <p>打发淡奶油至6-7分发（提起打蛋头有尖角）时加入草莓，口感最绵密。打发过度会导致冰淇淋变硬。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section-padding faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>常见问题解答</h2>
+                    <p>关于草莓冰淇淋制作，你可能在关心这些问题。</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            没有冰淇淋机可以制作吗？
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            可以。制作"手打冰淇淋"或使用密封容器冷冻法。将混合液放入密封袋，放入冰箱冷冻层，每隔1小时取出搅拌一次，重复3-4次即可获得绵密口感。
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            草莓冰淇淋可以保存多久？
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            在家用冰箱冷冻室中，可以保存2-3个月。建议分装成小份，避免反复解冻，以免影响风味和质地。
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            为什么我的冰淇淋吃起来有冰渣？
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            这通常是因为冰晶生长过快。确保混合液完全冷却后再冷冻，并且在冷冻过程中适当搅拌或使用抗结晶剂（如白砂糖或糖浆）。
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            可以用代糖代替蔗糖吗？
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            可以，但口感会有所不同。代糖（如赤藓糖醇、甜菊糖）热量更低，但可能无法完全抑制冰晶，建议适量添加并配合少量天然糖使用。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🍓 草莓冰淇淋</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.6; color: #999;">
+                        致力于分享最健康、最美味的自制冰淇淋食谱。让每一个家庭都能享受到甜蜜的夏日时光。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#recipes">食谱大全</a></li>
+                        <li><a href="#tips">制作技巧</a></li>
+                        <li><a href="#faq">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>相关食谱</h4>
+                    <ul>
+                        <li><a href="#">蓝莓冰淇淋</a></li>
+                        <li><a href="#">芒果奶昔</a></li>
+                        <li><a href="#">香草冰棍</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="#">投稿合作</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 草莓冰淇淋食谱大全. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
