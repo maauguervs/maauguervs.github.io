@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="北京市顺义区防范打击电信网络诈骗综合服务平台，提供反诈预警、举报渠道、防骗指南及最新案例警示。">
+    <meta name="keywords" content="sfks.bjsf.gov.cn,北京顺义反诈,顺义公安,电信诈骗防范,反诈中心,反诈举报">
+    <title>sfks.bjsf.gov.cn-北京顺义区防范打击电信网络诈骗综合服务平台</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #004494;
+            --accent-color: #e74c3c;
+            --success-color: #28a745;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --text-light: #666;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --header-height: 70px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-top: var(--header-height);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--header-height);
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .main-nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        .main-nav a {
+            font-size: 1rem;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .main-nav a:hover, .main-nav a.active {
+            color: var(--primary-color);
+        }
+
+        .emergency-btn {
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .emergency-btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .quick-actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .action-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+            padding: 15px 25px;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .action-card:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .action-card h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .action-card p {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        /* Main Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        /* Section Styling */
+        .section-title {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 5px solid var(--accent-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-more {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            font-weight: normal;
+        }
+
+        .section-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Article List */
+        .article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .article-item {
+            background: var(--white);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            display: flex;
+            gap: 20px;
+            transition: transform 0.2s;
+        }
+
+        .article-item:hover {
+            transform: translateX(5px);
+        }
+
+        .article-date {
+            min-width: 80px;
+            text-align: center;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            padding: 10px 0;
+        }
+
+        .article-date .day {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .article-date .month {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .article-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+
+        .article-content h3:hover {
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        .article-content p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .article-tag {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 2px 8px;
+            background-color: #e3f2fd;
+            color: var(--primary-color);
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+
+        /* Sidebar */
+        .sidebar-widget {
+            background: var(--white);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        .sidebar-widget h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .hot-list li {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hot-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .hot-index {
+            width: 20px;
+            height: 20px;
+            background-color: var(--accent-color);
+            color: var(--white);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            font-size: 0.8rem;
+            margin-right: 10px;
+        }
+
+        .hot-index.top-1 { background-color: #ff4757; }
+        .hot-index.top-2 { background-color: #ffa502; }
+        .hot-index.top-3 { background-color: #2ed573; }
+
+        .hot-title {
+            flex: 1;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Alert Banner */
+        .alert-banner {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin-bottom: 30px;
+            border-left: 5px solid #ffeeba;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .alert-icon {
+            font-size: 1.5rem;
+        }
+
+        /* Common Scams Section */
+        .scam-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .scam-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .scam-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .scam-img-placeholder {
+            height: 160px;
+            background-color: #ddd;
+            position: relative;
+        }
+
+        .scam-img-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .scam-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: var(--white);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+
+        .scam-content {
+            padding: 15px;
+        }
+
+        .scam-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .scam-content p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+
+        .scam-link {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Contact/Footer */
+        .contact-info {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #eef2f7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #adb5bd;
+            padding: 40px 0 20px;
+            margin-top: auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #495057;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .main-nav {
+                width: 100%;
+                overflow-x: auto;
+                padding-bottom: 5px;
+            }
+
+            .main-nav ul {
+                width: max-content;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-item {
+                flex-direction: column;
+            }
+
+            .article-date {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 5px 0;
+                margin-bottom: 10px;
+                background: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">盾</div>
+                <span>顺义公安反诈</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">预警通报</a></li>
+                    <li><a href="#">典型案例</a></li>
+                    <li><a href="#">防范指南</a></li>
+                    <li><a href="#">举报中心</a></li>
+                </ul>
+            </nav>
+            <a href="tel:110" class="emergency-btn">一键报警</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>防范打击电信网络诈骗</h1>
+            <p>全民反诈，你我同行。请下载“国家反诈中心”APP，开启来电预警，守护您的财产安全。</p>
+            <div class="quick-actions">
+                <div class="action-card">
+                    <h3>下载反诈APP</h3>
+                    <p>国家反诈中心APP</p>
+                </div>
+                <div class="action-card">
+                    <h3>紧急止付</h3>
+                    <p>96110 预警劝阻</p>
+                </div>
+                <div class="action-card">
+                    <h3>案件举报</h3>
+                    <p>在线提交线索</p>
+                </div>
+                <div class="action-card">
+                    <h3>防骗咨询</h3>
+                    <p>人工在线解答</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alert Banner -->
+        <div class="alert-banner">
+            <span class="alert-icon">⚠️</span>
+            <div>
+                <strong>最新预警：</strong>近期出现“注销校园贷”及“百万保障”扣费诈骗，请勿轻信陌生电话，切勿向陌生账户转账。
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content-grid">
+            <!-- Left Column -->
+            <div class="main-column">
+                <!-- Latest News -->
+                <section>
+                    <div class="section-title">
+                        <h2>最新动态</h2>
+                        <a href="#" class="section-more">查看更多 &gt;</a>
+                    </div>
+                    <div class="article-list">
+                        <article class="article-item">
+                            <div class="article-date">
+                                <span class="day">15</span>
+                                <span class="month">10月</span>
+                            </div>
+                            <div class="article-content">
+                                <h3>顺义警方成功破获一起“刷单返利”诈骗案，涉案金额达30万元</h3>
+                                <p>警方提醒：凡是需要先垫资的“刷单”都是诈骗，切勿贪图小利，落入刷单陷阱。</p>
+                                <span class="article-tag">案件通报</span>
+                            </div>
+                        </article>
+                        <article class="article-item">
+                            <div class="article-date">
+                                <span class="day">14</span>
+                                <span class="month">10月</span>
+                            </div>
+                            <div class="article-content">
+                                <h3>关于严厉打击跨境网络赌博的联合通告</h3>
+                                <p>公安机关持续保持高压态势，坚决铲除跨境网络赌博滋生土壤，保护人民群众财产安全。</p>
+                                <span class="article-tag">政策法规</span>
+                            </div>
+                        </article>
+                        <article class="article-item">
+                            <div class="article-date">
+                                <span class="day">12</span>
+                                <span class="month">10月</span>
+                            </div>
+                            <div class="article-content">
+                                <h3>顺义区开展“反诈宣传进校园”主题活动</h3>
+                                <p>民警深入辖区高校，通过案例讲解和模拟演练，提高大学生群体的识骗防骗能力。</p>
+                                <span class="article-tag">工作动态</span>
+                            </div>
+                        </article>
+                        <article class="article-item">
+                            <div class="article-date">
+                                <span class="day">10</span>
+                                <span class="month">10月</span>
+                            </div>
+                            <div class="article-content">
+                                <h3>警惕！冒充“公检法”诈骗手法翻新，注意这几点</h3>
+                                <p>骗子通过改号软件冒充公检法机关，以涉嫌犯罪为由要求转账，请务必核实身份。</p>
+                                <span class="article-tag">防骗指南</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Common Scams Section -->
+                <section style="margin-top: 50px;">
+                    <div class="section-title">
+                        <h2>常见诈骗类型</h2>
+                    </div>
+                    <div class="scam-grid">
+                        <div class="scam-card">
+                            <div class="scam-img-placeholder">
+                                <img src="https://picsum.photos/seed/scam1/400/250" alt="刷单返利诈骗">
+                                <span class="scam-badge">高发</span>
+                            </div>
+                            <div class="scam-content">
+                                <h4>刷单返利诈骗</h4>
+                                <p>先给甜头，后收割本金，承诺高回报。</p>
+                                <a href="#" class="scam-link">查看详情 &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="scam-card">
+                            <div class="scam-img-placeholder">
+                                <img src="https://picsum.photos/seed/scam2/400/250" alt="冒充客服">
+                                <span class="scam-badge">常见</span>
+                            </div>
+                            <div class="scam-content">
+                                <h4>冒充电商客服</h4>
+                                <p>退款理赔、激活社保卡，诱导转账。</p>
+                                <a href="#" class="scam-link">查看详情 &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="scam-card">
+                            <div class="scam-img-placeholder">
+                                <img src="https://picsum.photos/seed/scam3/400/250" alt="杀猪盘">
+                                <span class="scam-badge">隐蔽</span>
+                            </div>
+                            <div class="scam-content">
+                                <h4>“杀猪盘”诈骗</h4>
+                                <p>网恋交友，诱导投资理财，卷款跑路。</p>
+                                <a href="#" class="scam-link">查看详情 &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column (Sidebar) -->
+            <aside class="sidebar">
+                <!-- Hot List -->
+                <div class="sidebar-widget">
+                    <h3>本月热点</h3>
+                    <ul class="hot-list">
+                        <li>
+                            <span class="hot-index top-1">1</span>
+                            <span class="hot-title">国家反诈中心APP下载指南</span>
+                        </li>
+                        <li>
+                            <span class="hot-index top-2">2</span>
+                            <span class="hot-title">如何识别AI换脸诈骗？</span>
+                        </li>
+                        <li>
+                            <span class="hot-index top-3">3</span>
+                            <span class="hot-title">遇到诈骗后如何止损？</span>
+                        </li>
+                        <li>
+                            <span class="hot-index">4</span>
+                            <span class="hot-title">顺义区反诈宣传口号征集</span>
+                        </li>
+                        <li>
+                            <span class="hot-index">5</span>
+                            <span class="hot-title">老年人如何防骗？</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Widget -->
+                <div class="sidebar-widget">
+                    <h3>官方联系方式</h3>
+                    <div class="contact-info" style="flex-direction: column; gap: 15px;">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>报警电话：</strong><br>
+                                110
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <strong>反诈专线：</strong><br>
+                                96110
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>顺义区反诈中心：</strong><br>
+                                北京市顺义区
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Download Guide -->
+                <div class="sidebar-widget" style="background-color: #e3f2fd; border: 1px solid #bbdefb;">
+                    <h3>下载指引</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 10px;">扫描下方二维码下载“国家反诈中心”APP，开启来电预警功能。</p>
+                    <div style="width: 150px; height: 150px; background: white; margin: 0 auto; display: flex; align-items: center; justify-content: center; border: 1px solid #ccc;">
+                        <span style="color: #999; font-size: 0.8rem;">二维码区域</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">网站简介</a></li>
+                        <li><a href="#">工作职责</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>服务指南</h4>
+                    <ul>
+                        <li><a href="#">反诈APP下载</a></li>
+                        <li><a href="#">预警劝阻流程</a></li>
+                        <li><a href="#">线索举报入口</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>法律声明</h4>
+                    <ul>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">免责声明</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 北京市顺义区防范打击电信网络诈骗综合服务平台 版权所有</p>
+                <p style="font-size: 0.8rem; color: #6c757d; margin-top: 5px;">本网站仅供宣传防范知识，不提供任何非法交易服务。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+                          </html>
