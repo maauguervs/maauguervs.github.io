@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="贫民窟的百万富翁插曲大全，详细解析电影配乐、插曲列表及音乐背后的故事。">
+    <meta name="keywords" content="贫民窟的百万富翁插曲, 电影原声, 配乐, 英文歌曲">
+    <title>贫民窟的百万富翁插曲-电影原声配乐与背景音乐解析</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --secondary-color: #fbc02d;
+            --text-dark: #1a1a1a;
+            --text-gray: #666;
+            --bg-light: #f9f9f9;
+            --white: #ffffff;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 32px;
+            --container-width: 1200px;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+            padding-bottom: var(--spacing-sm);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: var(--spacing-lg);
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/slumdog/1600/600');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-md);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto var(--spacing-lg);
+            opacity: 0.9;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .hero-btn:hover {
+            background-color: #b71c1c;
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        main {
+            padding: var(--spacing-lg) 0;
+        }
+
+        /* Intro Section */
+        .intro {
+            background: var(--white);
+            padding: var(--spacing-lg);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .intro h2 {
+            margin-bottom: var(--spacing-md);
+            color: var(--primary-color);
+        }
+
+        .intro p {
+            margin-bottom: var(--spacing-md);
+            text-align: justify;
+        }
+
+        /* Soundtrack Grid */
+        .soundtrack-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .track-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .track-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .track-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .track-info {
+            padding: var(--spacing-md);
+        }
+
+        .track-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .track-artist {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .track-desc {
+            font-size: 0.85rem;
+            color: var(--text-gray);
+            line-height: 1.4;
+        }
+
+        /* Analysis Section */
+        .analysis-section {
+            background-color: var(--white);
+            padding: var(--spacing-lg);
+            border-radius: 8px;
+            margin-top: var(--spacing-lg);
+        }
+
+        .analysis-list {
+            counter-reset: analysis-counter;
+        }
+
+        .analysis-item {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .analysis-item::before {
+            counter-increment: analysis-counter;
+            content: counter(analysis-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            background-color: var(--secondary-color);
+            color: var(--text-dark);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            font-weight: 700;
+        }
+
+        .analysis-item h3 {
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.2rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin-top: var(--spacing-lg);
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: var(--spacing-sm);
+            border-radius: 4px;
+            border: 1px solid #eee;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: var(--spacing-md);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            background-color: var(--white);
+            transition: background-color 0.2s;
+        }
+
+        .faq-question:hover {
+            background-color: #f5f5f5;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 var(--spacing-md);
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background-color: #fafafa;
+            color: var(--text-gray);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: var(--spacing-md);
+            max-height: 200px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #ccc;
+            padding: var(--spacing-lg) 0;
+            margin-top: var(--spacing-lg);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: var(--spacing-md);
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: var(--spacing-lg);
+            padding-top: var(--spacing-md);
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: var(--spacing-md) 0;
+                gap: var(--spacing-md);
+            }
+
+            nav ul {
+                gap: var(--spacing-md);
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">Slumdog<span>Music</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#soundtrack">插曲列表</a></li>
+                    <li><a href="#analysis">音乐解析</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>贫民窟的百万富翁插曲</h1>
+            <p>探索丹尼·叶夫曼为电影《贫民窟的百万富翁》创作的精彩配乐，解析每一首插曲如何推动剧情发展并讲述贾马尔与拉提卡的爱情故事。</p>
+            <a href="#soundtrack" class="hero-btn">查看完整歌单</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- Intro -->
+        <section class="intro">
+            <h2>关于电影配乐</h2>
+            <p>《贫民窟的百万富翁》不仅是一部剧情紧凑的剧情片，更是一部音乐盛宴。电影配乐由丹尼·叶夫曼操刀，而贯穿全片的插曲则主要来自20世纪70年代、80年代和90年代的印度流行音乐。这些歌曲不仅是背景音乐，更是角色内心情感的直接投射，将观众瞬间带入孟买贫民窟的热烈与沧桑之中。</p>
+            <p>影片中出现的歌曲大多具有浓郁的宝莱坞风格，节奏明快、情感充沛。通过这些插曲，导演用音乐串联起了贾马尔跨越时空的记忆碎片，让每一道“问题”都伴随着一段刻骨铭心的回忆。</p>
+        </section>
+
+        <!-- Soundtrack List -->
+        <section id="soundtrack">
+            <h2 class="section-title">经典插曲列表</h2>
+            <div class="soundtrack-grid">
+                <article class="track-card">
+                    <img src="https://picsum.photos/seed/latika/400/300" alt="O Saya" class="track-img">
+                    <div class="track-info">
+                        <h3 class="track-title">O Saya</h3>
+                        <p class="track-artist">A. R. Rahman & M.I.A.</p>
+                        <p class="track-desc">全片最具代表性的插曲之一，节奏强烈的电子与印度传统乐器结合，充满神秘感，出现在酒吧猜谜环节。</p>
+                    </div>
+                </article>
+
+                <article class="track-card">
+                    <img src="https://picsum.photos/seed/gangster/400/300" alt="Jai Ho" class="track-img">
+                    <div class="track-info">
+                        <h3 class="track-title">Jai Ho</h3>
+                        <p class="track-artist">A. R. Rahman</p>
+                        <p class="track-desc">获得奥斯卡最佳原创歌曲奖的冠军曲目，激昂的旋律象征着贾马尔对拉提卡坚定不移的爱与决心。</p>
+                    </div>
+                </article>
+
+                <article class="track-card">
+                    <img src="https://picsum.photos/seed/mausam/400/300" alt="Maiyya Mainu" class="track-img">
+                    <div class="track-info">
+                        <h3 class="track-title">Maiyya Mainu</h3>
+                        <p class="track-artist">M. G. Sreekumar</p>
+                        <p class="track-desc">出现在贾马尔回忆童年时，旋律悠扬感人，展现了兄弟情谊与儿时在贫民窟的生活场景。</p>
+                    </div>
+                </article>
+
+                <article class="track-card">
+                    <img src="https://picsum.photos/seed/chaiyya/400/300" alt="Chaiyya Chaiyya" class="track-img">
+                    <div class="track-info">
+                        <h3 class="track-title">Chaiyya Chaiyya</h3>
+                        <p class="track-artist">Sukhwinder Singh</p>
+                        <p class="track-desc">源自宝莱坞老电影《Dil Se..》的插曲，出现在火车追逐戏中，视觉与听觉的双重震撼。</p>
+                    </div>
+                </article>
+
+                <article class="track-card">
+                    <img src="https://picsum.photos/seed/latika2/400/300" alt="Ringa Ringa" class="track-img">
+                    <div class="track-info">
+                        <h3 class="track-title">Ringa Ringa</h3>
+                        <p class="track-artist">A. R. Rahman</p>
+                        <p class="track-desc">欢快诙谐的印度风格歌曲，描绘了贾马尔参加才艺节目时的紧张与滑稽。</p>
+                    </div>
+                </article>
+
+                <article class="track-card">
+                    <img src="https://picsum.photos/seed/mausam2/400/300" alt="Latika's Theme" class="track-img">
+                    <div class="track-info">
+                        <h3 class="track-title">Latika's Theme</h3>
+                        <p class="track-artist">A. R. Rahman</p>
+                        <p class="track-desc">贯穿全片的旋律变奏，象征着拉提卡这个角色，温柔而深情。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Analysis -->
+        <section id="analysis" class="analysis-section">
+            <h2 class="section-title">配乐与剧情解析</h2>
+            <div class="analysis-list">
+                <div class="analysis-item">
+                    <h3>记忆的碎片化叙事</h3>
+                    <p>电影通过电视问答的形式，将贾马尔的人生经历拆解。每当一个答案被猜中，一段特定的插曲就会响起，将观众带入贾马尔当下的心理状态。例如，当贾马尔回答出“泰姬陵”时，播放的《O Saya》将观众带入了孟买贫民窟的现代氛围，为后续的酒吧场景做铺垫。</p>
+                </div>
+                <div class="analysis-item">
+                    <h3>传统与流行的融合</h3>
+                    <p>丹尼·叶夫曼在原声带中保留了A.R.拉赫曼的宝莱坞风格，同时融入了电子音乐元素。这种融合不仅符合现代观众的审美，也巧妙地反映了电影中现代孟买与传统贫民窟文化的冲突与共存。</p>
+                </div>
+                <div class="analysis-item">
+                    <h3>情感色彩的转换</h3>
+                    <p>从《Maiyya Mainu》中兄弟情的温暖，到《Chaiyya Chaiyya》中逃亡的紧张，再到《Jai Ho》中胜利的喜悦，每一首插曲都精准地匹配了当时的情绪基调。特别是《Latika's Theme》，作为贯穿全片的旋律，每当它出现，都意味着贾马尔对拉提卡深沉的思念。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq-section">
+            <h2 class="section-title">常见问题</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">哪里可以听到这些插曲？</div>
+                <div class="faq-answer">
+                    <p>您可以在各大主流音乐平台（如Spotify、Apple Music、网易云音乐等）搜索“A.R. Rahman - Slumdog Millionaire Soundtrack”或“Slumdog Millionaire Songs”来收听完整原声带。部分插曲（如《Jai Ho》）在电影中使用了翻唱版本。</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">《Jai Ho》是原创歌曲吗？</div>
+                <div class="faq-answer">
+                    <p>《Jai Ho》是由A.R.拉赫曼、Tanvi Shah和Gulzar为电影专门创作的原创歌曲，并非翻唱。这首歌获得了第81届奥斯卡金像奖最佳原创歌曲奖。</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">为什么电影里会有这么多英文歌？</div>
+                <div class="faq-answer">
+                    <p>虽然电影背景设定在印度，但《贫民窟的百万富翁》大量使用了当时流行的西方流行音乐和电子音乐作为插曲。这种处理方式不仅丰富了音乐的层次感，也暗示了贫民窟青年对西方文化的向往以及全球化对印度的影响。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <p>专注于电影音乐与配乐解析，为影迷提供深度的音乐鉴赏指南。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>相关资源</h4>
+                    <ul>
+                        <li><a href="#">电影原声带下载</a></li>
+                        <li><a href="#">A.R. Rahman作品集</a></li>
+                        <li><a href="#">宝莱坞音乐指南</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">配乐列表</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 贫民窟的百万富翁插曲解析站. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
