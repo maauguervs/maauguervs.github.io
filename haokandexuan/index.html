@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>好看的悬疑小说-烧脑神作与深度推理阅读指南</title>
+    <meta name="description" content="本站汇集全网最值得阅读的悬疑小说，涵盖本格推理、社会派推理、惊悚悬疑及心理犯罪题材。提供精彩书评、作者介绍及阅读指南，助您发现那些让人欲罢不能的烧脑神作。">
+    <meta name="keywords" content="好看的悬疑小说, 推理小说, 悬疑书单, 惊悚小说, 心理悬疑, 本格推理, 社会派推理">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #1a1d24;
+            --text-main: #e0e0e0;
+            --text-muted: #8b9bb4;
+            --accent-color: #d4a373;
+            --accent-hover: #faedcd;
+            --border-color: #2d3342;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+            --font-serif: "Georgia", "Times New Roman", "Songti SC", serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: rgba(15, 17, 21, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent-color);
+        }
+
+        .search-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        /* Hero 区域 */
+        .hero {
+            position: relative;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1d24 0%, #0f1115 100%);
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://picsum.photos/seed/noir/1920/1080'); /* 随机抽象图 */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            mix-blend-mode: overlay;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background-color: rgba(212, 163, 115, 0.15);
+            color: var(--accent-color);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            border: 1px solid rgba(212, 163, 115, 0.3);
+        }
+
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: #1a1d24;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(212, 163, 115, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            margin-left: 15px;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--text-main);
+            background-color: rgba(255,255,255,0.05);
+        }
+
+        /* 分类导航 */
+        .category-nav {
+            padding: 30px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+
+        .cat-list {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cat-item {
+            padding: 8px 16px;
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .cat-item:hover, .cat-item.active {
+            color: var(--text-main);
+            border-color: var(--accent-color);
+        }
+
+        /* 内容区块 */
+        section {
+            margin-bottom: 80px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-family: var(--font-serif);
+            color: var(--text-main);
+        }
+
+        .section-link {
+            color: var(--accent-color);
+            font-size: 0.9rem;
+        }
+
+        /* 推荐卡片网格 */
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 30px;
+        }
+
+        .book-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid transparent;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-color: var(--border-color);
+        }
+
+        .book-cover {
+            position: relative;
+            width: 100%;
+            padding-top: 150%; /* 2:3 Aspect Ratio */
+            background-color: #2d3342;
+            overflow: hidden;
+        }
+
+        .book-cover img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .book-card:hover .book-cover img {
+            transform: scale(1.05);
+        }
+
+        .book-rating {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ffd700;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .book-info {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .book-author {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .book-desc {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex: 1;
+        }
+
+        .book-meta {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 10px;
+        }
+
+        /* 阅读指南列表 */
+        .guide-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .guide-item {
+            display: flex;
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: border-color 0.3s;
+        }
+
+        .guide-item:hover {
+            border-color: var(--accent-color);
+        }
+
+        .guide-icon {
+            font-size: 2rem;
+            margin-right: 20px;
+            color: var(--accent-color);
+            flex-shrink: 0;
+        }
+
+        .guide-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .guide-content p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* 常见问题 */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .faq-item {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .faq-q {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .faq-q::before {
+            content: "Q";
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .faq-a {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #0a0c0f;
+            padding: 60px 0 30px;
+            margin-top: 80px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h2 {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-brand p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            max-width: 300px;
+        }
+
+        .footer-col h4 {
+            color: var(--text-main);
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            color: #555;
+            font-size: 0.8rem;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .nav-links { display: none; } /* 简化处理，移动端隐藏导航链接 */
+            .book-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+            .book-cover { padding-top: 140%; }
+            .guide-item { flex-direction: column; }
+            .guide-icon { margin-bottom: 10px; }
+            .faq-grid { grid-template-columns: 1fr; }
+            .footer-content { grid-template-columns: 1fr; gap: 30px; }
+            .btn { width: 100%; margin: 10px 0 0 0; text-align: center; }
+            .btn-outline { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-inner">
+            <a href="#" class="logo">推理<span>视界</span></a>
+            <nav class="nav-links">
+                <a href="#" class="active">首页</a>
+                <a href="#">热门榜单</a>
+                <a href="#">新书上架</a>
+                <a href="#">作者专栏</a>
+                <a href="#">悬疑论坛</a>
+            </nav>
+            <button class="search-btn" aria-label="搜索">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <span class="hero-tag">深度阅读指南</span>
+                <h1>寻找那本让你彻夜难眠的<br>好看悬疑小说</h1>
+                <p>从本格推理的精妙诡计到社会派的人性剖析，我们为您甄选全网最值得阅读的烧脑神作。点击探索属于你的下一个阅读旅程。</p>
+                <div class="hero-actions">
+                    <a href="#recommend" class="btn">开始阅读</a>
+                    <a href="#guide" class="btn btn-outline">阅读指南</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 分类筛选 -->
+        <div class="container">
+            <div class="category-nav">
+                <ul class="cat-list">
+                    <li class="cat-item active">全部推荐</li>
+                    <li class="cat-item">本格推理</li>
+                    <li class="cat-item">社会派悬疑</li>
+                    <li class="cat-item">心理惊悚</li>
+                    <li class="cat-item">硬汉派侦探</li>
+                    <li class="cat-item">刑侦破案</li>
+                    <li class="cat-item">短篇合集</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 热门推荐 -->
+        <section id="recommend" class="container">
+            <div class="section-header">
+                <h2 class="section-title">本周必读神作</h2>
+                <a href="#" class="section-link">查看完整榜单 &rarr;</a>
+            </div>
+            
+            <div class="book-grid">
+                <!-- 书籍卡片 1 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="https://picsum.photos/seed/book1/400/600" alt="封面">
+                        <div class="book-rating">9.8分</div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">沉默的羔羊</h3>
+                        <p class="book-author">托马斯·哈里斯</p>
+                        <p class="book-desc">FBI实习探员克拉丽斯为了寻找失踪的国会助理，不得不向被囚禁的食人魔汉尼拔博士请教，展开一场惊心动魄的心理博弈。</p>
+                        <div class="book-meta">
+                            <span>惊悚/心理</span>
+                            <span>已完结</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 书籍卡片 2 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="https://picsum.photos/seed/book2/400/600" alt="封面">
+                        <div class="book-rating">9.5分</div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">长夜难明</h3>
+                        <p class="book-author">紫金陈</p>
+                        <p class="book-desc">为了查清十年前的一起冤案，检察官江阳耗尽家财、身陷囹圄，甚至付出了生命的代价。这是一部关于正义与牺牲的沉重史诗。</p>
+                        <div class="book-meta">
+                            <span>社会派/犯罪</span>
+                            <span>已完结</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 书籍卡片 3 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="https://picsum.photos/seed/book3/400/600" alt="封面">
+                        <div class="book-rating">9.7分</div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">达·芬奇密码</h3>
+                        <p class="book-author">丹·布朗</p>
+                        <p class="book-desc">卢浮宫博物馆馆长被杀，死前留下神秘密码。符号学家罗伯特·兰登被迫卷入一场跨越欧洲、涉及宗教秘密与历史阴谋的追逃。</p>
+                        <div class="book-meta">
+                            <span>解谜/冒险</span>
+                            <span>已完结</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 书籍卡片 4 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="https://picsum.photos/seed/book4/400/600" alt="封面">
+                        <div class="book-rating">9.6分</div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">无人生还</h3>
+                        <p class="book-author">阿加莎·克里斯蒂</p>
+                        <p class="book-desc">八个人受邀来到一座孤岛，按照童谣的歌词逐一死去。当侦探赶到时，岛上竟然无人生还。经典的暴风雪山庄模式。</p>
+                        <div class="book-meta">
+                            <span>本格/密室</span>
+                            <span>已完结</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 书籍卡片 5 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="https://picsum.photos/seed/book5/400/600" alt="封面">
+                        <div class="book-rating">9.4分</div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">恶意</h3>
+                        <p class="book-author">东野圭吾</p>
+                        <p class="book-desc">畅销书作家日高邦彦被杀，凶手是他的挚友野野口修。这不仅仅是一起谋杀案，更是一场关于人性深处嫉妒与恶意的剖析。</p>
+                        <div class="book-meta">
+                            <span>社会派/人性</span>
+                            <span>已完结</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 书籍卡片 6 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="https://picsum.photos/seed/book6/400/600" alt="封面">
+                        <div class="book-rating">9.3分</div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">白夜行</h3>
+                        <p class="book-author">东野圭吾</p>
+                        <p class="book-desc">全书没有一句对话，却描绘了两个幸存者长达十九年的共生关系。在最深的黑暗中，他们彼此依靠，互为太阳。</p>
+                        <div class="book-meta">
+                            <span>社会派/爱情</span>
+                            <span>已完结</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 阅读指南 -->
+        <section id="guide" style="background-color: #13151a; padding: 60px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">如何挑选好看的悬疑小说</h2>
+                </div>
+                <div class="guide-list">
+                    <div class="guide-item">
+                        <div class="guide-icon">🔍</div>
+                        <div class="guide-content">
+                            <h3>明确阅读偏好</h3>
+                            <p>如果您喜欢在阅读过程中寻找线索、破解谜题，可以选择“本格推理”类小说；如果您更关注案件背后的社会现实和人物命运，则“社会派”悬疑作品更适合您。</p>
+                        </div>
+                    </div>
+                    <div class="guide-item">
+                        <div class="guide-icon">⚖️</div>
+                        <div class="guide-content">
+                            <h3>关注作者风格</h3>
+                            <p>阿加莎·克里斯蒂擅长密室诡计与心理博弈，东野圭吾擅长社会派推理与情感纠葛，丹·布朗擅长历史解谜与快节奏冒险。了解作者风格能帮助您更快找到心仪之作。</p>
+                        </div>
+                    </div>
+                    <div class="guide-item">
+                        <div class="guide-icon">🛡️</div>
+                        <div class="guide-content">
+                            <h3>警惕剧透与烂尾</h3>
+                            <p>在阅读前查看书评区的“剧情走向”和“结局评价”。优秀的悬疑小说往往结局反转有力，而糟糕的“烂尾”会破坏阅读体验。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="container">
+            <div class="section-header">
+                <h2 class="section-title">读者常见问题</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-q">悬疑小说和推理小说有什么区别？</div>
+                    <div class="faq-a">广义上两者常被混用，但推理小说更侧重于解谜过程和逻辑推演（如密室杀人），而悬疑小说更侧重于营造紧张的氛围、隐藏的真相以及对人性的探讨。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">新手应该从哪本悬疑小说开始看？</div>
+                    <div class="faq-a">推荐从《无人生还》或《福尔摩斯探案集》开始，这两部作品结构严谨，诡计经典，且阅读门槛相对较低，能很好地建立对悬疑类型的认知。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">这些小说是免费的吗？</div>
+                    <div class="faq-a">本站主要提供书评、推荐及阅读指南。部分经典作品在公共版权领域或合作平台可免费阅读，具体请参照书籍版权信息。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">如何判断一本悬疑小说是否“好看”？</div>
+                    <div class="faq-a">除了评分，关键在于“代入感”。一本好看的小说会让你忘记时间，情节紧凑不注水，且结局的反转能给你带来思维上的冲击或情感上的共鸣。</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>推理<span>视界</span></h2>
+                    <p>专注于为悬疑推理小说爱好者提供最优质的书单推荐与深度阅读指南。在文字的迷宫中寻找真相的微光。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>探索</h4>
+                    <ul>
+                        <li><a href="#">最新上架</a></li>
+                        <li><a href="#">年度榜单</a></li>
+                        <li><a href="#">冷门佳作</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>分类</h4>
+                    <ul>
+                        <li><a href="#">本格推理</a></li>
+                        <li><a href="#">社会派</a></li>
+                        <li><a href="#">惊悚恐怖</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">投稿指南</a></li>
+                        <li><a href="#">免责声明</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 推理视界. All Rights Reserved. 本站内容仅供学习交流使用.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
